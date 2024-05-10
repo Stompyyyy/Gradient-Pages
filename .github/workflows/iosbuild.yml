@@ -30,6 +30,9 @@ jobs:
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
+    runs:
+      using: 'node20'
+      main: 'main.js'
 
     steps:
       - uses: actions/checkout@v3
